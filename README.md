@@ -1,20 +1,27 @@
 # webOS
 
-Browser-based desktop environment (temporary project name: **webOS**).
+Browser desktop environment.
+
+**Repo:** https://github.com/vxxahmaddawar-byte/webOS
+
+## How games work
+
+Games are **not** stored in this repo as 584 separate repos.
+
+- **Catalog** (`games.json` in this repo) lists games
+- Each game **HTML file** loads from one shared public GitHub repo:
+  - https://github.com/BombedByXander/lib-backup
+  - via `raw.githubusercontent.com/...`
+
+So: **your repo** = webOS UI + catalog. **lib-backup** = game files.
 
 ## Run
 
-Open `index.html` in a browser, or enable **GitHub Pages** (Settings → Pages → Deploy from `main` / root).
+1. Download the latest `webOS.html` from chat / artifacts (full app, ~1MB, all 584 games in catalog)
+2. Or open this repo and use GitHub Pages once `index.html` is the full app
 
-## Games
+## Full app file
 
-Games are **not embedded** in this file. They load live from one public GitHub repo:
+Use the `webOS.html` file from the project (not embedded games — loads from GitHub raw on click).
 
-- Source: [BombedByXander/lib-backup](https://github.com/BombedByXander/lib-backup)
-- Example: `https://raw.githubusercontent.com/BombedByXander/lib-backup/main/0-fix2.html`
-
-Internet is required. This is **one games repo with many files**, not a separate repo per game.
-
-## Apps
-
-Settings, Steam library, Wallpaper Engine, Browser, dock, window management.
+Internet required for games.
